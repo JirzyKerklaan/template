@@ -4,8 +4,14 @@
             <div class="nav-item font-bold">
                 <a href="#">Home</a>
             </div>
+            <div class="nav-item font-bold">
+                <a href="#">Home</a>
+            </div>
             <div class="nav-item logo h-2/4 w-fit">
                 <img src="https://examen.lcl/Resources/Assets/Logo.svg" class="h-full" alt="Logo" draggable="false">
+            </div>
+            <div class="nav-item font-bold">
+                <a href="#">Home</a>
             </div>
             <div class="nav-item font-bold">
                 <a href="#">Home</a>
