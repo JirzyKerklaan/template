@@ -3,7 +3,7 @@
 $routes = [
     '/' => function () use ($mysqli) {
         $controller = new LocationController($mysqli);
-        $controller->index('locations_overview');
+        $controller->index('home');
     },
 ];
 

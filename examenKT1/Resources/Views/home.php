@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Locations Overview</title>
-</head>
-
-<body>
-    <h1>Locations</h1>
+    <?php require_once(__DIR__ . '../../../Resources/Views/Components/Pageheader.php'); ?>
+    <?php require_once(__DIR__ . '../../../Resources/Views/Components/test.php'); ?>
     <?php if (isset($locationsArray) && !empty($locationsArray)) : ?>
         <ul>
             <?php foreach ($locationsArray as $location) : ?>
@@ -17,6 +9,4 @@
     <?php else : ?>
         <p>No locations found.</p>
     <?php endif; ?>
-</body>
-
-</html>
+    <div class="h-screen"></div>
