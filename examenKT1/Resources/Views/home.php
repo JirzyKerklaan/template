@@ -1,5 +1,4 @@
     <?php require_once(__DIR__ . '../../../Resources/views/Components/Pageheader.php'); ?>
-    <?php require_once(__DIR__ . '../../../Resources/views/Components/test.php'); ?>
     <?php if (isset($locationsArray) && !empty($locationsArray)) : ?>
         <ul>
             <?php foreach ($locationsArray as $location) : ?>
@@ -9,4 +8,3 @@
     <?php else : ?>
         <p>No locations found.</p>
     <?php endif; ?>
-    <div class="h-screen"></div>

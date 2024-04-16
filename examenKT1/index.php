@@ -43,9 +43,10 @@
             </div>
         </main>
     <?php
+        require_once(__DIR__ . '/Resources/views/Components/Footer.php');
+
         exit;
     } else {
-        require_once(__DIR__ . '/Resources/views/Components/Header.php');
         require_once(__DIR__ . '/Resources/views/404-page.php');
         exit;
     }
