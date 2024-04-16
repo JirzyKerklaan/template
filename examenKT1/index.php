@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Examen KT1">
-    <title>Document</title>
+
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -42,6 +42,7 @@
                 ?>
             </div>
         </main>
+        <div class="h-[50vh]"></div>
     <?php
         require_once(__DIR__ . '/Resources/views/Components/Footer.php');
 
