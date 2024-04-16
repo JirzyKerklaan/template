@@ -1,23 +1,23 @@
-<header class="w-screen px-4 md:px-8 sticky top-4 z-[100]">
-    <div class="w-full h-16 mt-4 rounded-2xl md:rounded-3xl flex justify-center backdrop-blur-sm bg-white/15 shadow-md	">
-        <nav class=" w-[90%] md:w-3/4 h-full flex flex-row justify-start md:justify-around items-center">
-            <div class="nav-item font-bold hidden md:block">
-                <a href="#">Home</a>
+<header class="w-screen px-4 lg:px-8 sticky top-4 z-[100]">
+    <div class="w-full h-16 mt-4 rounded-2xl lg:rounded-3xl flex justify-center backdrop-blur-sm bg-white/15 shadow-lg	">
+        <nav class=" w-[90%] lg:w-3/4 h-full flex flex-row justify-start lg:justify-around items-center">
+            <div class="nav-item font-bold hidden lg:flex w-32 justify-center">
+                <a href="/" class="nav-link text-black/60 hover:text-black transition-all ease-in-out duration-200">Home</a>
             </div>
-            <div class="nav-item font-bold hidden md:block">
-                <a href="#">Home</a>
+            <div class="nav-item font-bold hidden lg:flex w-32 justify-center">
+                <a href="#" class="nav-link text-black/60 hover:text-black transition-all ease-in-out duration-200">About</a>
             </div>
-            <div class="nav-item logo h-1/3 md:h-2/4 w-fit grow md:grow-0">
-                <img src="https://examen.lcl/Resources/assets/Logo.svg" class="h-full" alt="Logo" draggable="false">
+            <a href="/" class="nav-item logo h-1/3 lg:h-2/4 w-auto mr-auto lg:mr-0 hover:cursor-pointer">
+                <img src="https://examen.lcl/Resources/assets/Logo.svg" class="h-full w-fit" alt="Logo" draggable="false">
+            </a>
+            <div class="nav-item font-bold hidden lg:flex w-32 justify-center">
+                <a href="#" class="nav-link text-black/60 hover:text-black transition-all ease-in-out duration-200">Projects</a>
             </div>
-            <div class="nav-item font-bold hidden md:block">
-                <a href="#">Home</a>
-            </div>
-            <div class="nav-item font-bold hidden md:block">
-                <a href="#">Home</a>
+            <div class="nav-item font-bold hidden lg:flex w-32 justify-center">
+                <a href="#" class="nav-link text-black/60 hover:text-black transition-all ease-in-out duration-200">Contact</a>
             </div>
 
-            <div class="hamburger block z-[100] md:hidden h-full w-fit text-3xl flex items-center justify-end">
+            <div class="hamburger block z-[100] lg:hidden h-full w-fit text-3xl flex items-center justify-end">
                 <i class="fa-solid fa-bars toggle-nav"></i>
             </div>
         </nav>
@@ -28,10 +28,10 @@
             <i class="fa-solid fa-close"></i>
         </div>
         <nav class="flex flex-col gap-4 text-2xl text-center">
-            <a href="#" class="nav-item font-bold">Home</a>
-            <a href="#" class="nav-item">Home Home</a>
-            <a href="#" class="nav-item">Home</a>
-            <a href="#" class="nav-item">Home Home</a>
+            <a href="/" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Projects</a>
+            <a href="#" class="nav-link">Contact</a>
         </nav>
     </div>
 </header>

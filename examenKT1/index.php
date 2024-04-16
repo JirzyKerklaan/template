@@ -12,6 +12,9 @@
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/43df3a711f.js" crossorigin="anonymous"></script>
 
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
@@ -42,6 +45,7 @@
     <?php
         exit;
     } else {
+        require_once(__DIR__ . '/Resources/views/Components/Header.php');
         require_once(__DIR__ . '/Resources/views/404-page.php');
         exit;
     }

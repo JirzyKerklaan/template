@@ -1,4 +1,23 @@
 $(document).ready(function () {
+    $(function () {
+        var firstPathSegment = location.pathname.split("/")[1];
+
+        if (firstPathSegment === "") {
+            firstPathSegment = "/";
+        }
+
+        $('.nav-link').removeClass('active');
+
+        // Special handling for the homepage
+        if (firstPathSegment === "/") {
+            $('.nav-link[href="/"]').addClass('active');
+        } else {
+            $('.nav-link[href^="/' + firstPathSegment + '"]').addClass('active');
+        }
+    });
+
+
+
     //@ Navigation menu mobile
     $(".toggle-nav").click(function () {
         if ($(".mobile-nav").hasClass('hidden')) {
@@ -14,7 +33,7 @@ $(document).ready(function () {
 
             setTimeout(function () {
                 $(".mobile-nav").toggleClass('hidden');
-            }, 500);
+            }, 300);
         }
     });
 });
