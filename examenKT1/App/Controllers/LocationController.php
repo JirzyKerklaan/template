@@ -72,6 +72,6 @@ class LocationController
     {
         extract($locationsArray);
 
-        require_once "Resources/Views/{$viewName}.php";
+        require_once "Resources/views/{$viewName}.php";
     }
 }

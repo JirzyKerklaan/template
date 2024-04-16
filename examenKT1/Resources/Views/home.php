@@ -1,5 +1,5 @@
-    <?php require_once(__DIR__ . '../../../Resources/Views/Components/Pageheader.php'); ?>
-    <?php require_once(__DIR__ . '../../../Resources/Views/Components/test.php'); ?>
+    <?php require_once(__DIR__ . '../../../Resources/views/Components/Pageheader.php'); ?>
+    <?php require_once(__DIR__ . '../../../Resources/views/Components/test.php'); ?>
     <?php if (isset($locationsArray) && !empty($locationsArray)) : ?>
         <ul>
             <?php foreach ($locationsArray as $location) : ?>
