@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+    //@ Active nav link
     $(function () {
         var firstPathSegment = location.pathname.split("/")[1];
 

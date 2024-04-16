@@ -28,10 +28,10 @@
             <i class="fa-solid fa-close"></i>
         </div>
         <nav class="flex flex-col gap-4 text-2xl text-center">
-            <a href="/" class="nav-link">Home</a>
-            <a href="#" class="nav-link">About</a>
-            <a href="#" class="nav-link">Projects</a>
-            <a href="#" class="nav-link">Contact</a>
+            <a href="/" class="nav-link text-black/60">Home</a>
+            <a href="#" class="nav-link text-black/60">About</a>
+            <a href="#" class="nav-link text-black/60">Projects</a>
+            <a href="#" class="nav-link text-black/60">Contact</a>
         </nav>
     </div>
 </header>
