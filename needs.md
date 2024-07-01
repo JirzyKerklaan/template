@@ -1,1 +1,0 @@
-[Trello planning]('https://trello.com/invite/b/dCn6P9LL/ATTI5c95c03c4cf2daf8e1c3920e21314b377480FAD9/examen-kt1')
