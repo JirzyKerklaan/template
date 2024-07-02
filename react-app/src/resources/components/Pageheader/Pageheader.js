@@ -1,6 +1,6 @@
 const Pageheader = () => {
     return (
-        <div className="section pageheader">
+        <div className="section pageheader npt mpb">
             <div className="content">
                 <div className="text">
                     <h1>Agency that creates and embraces change.</h1>

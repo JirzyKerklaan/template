@@ -16,9 +16,11 @@ a, button {
         font-size: 18px;
         line-height: 100%;
         text-decoration: none;
+        transition: all ease-in-out .2s;
 
         &:hover {
-            text-decoration: underline;
+            color: #0a0a0a45;
+            transition: all ease-in-out .2s;
         }
     }
 }

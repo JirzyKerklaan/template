@@ -1,0 +1,15 @@
+.clients {
+    width: auto;
+
+    .title {
+        padding: 0 calc((100vw - (100vw - 300px)) / 2);
+    }
+
+    .outer {
+        padding: 0 calc((100vw - (100vw - 300px)) / 2);
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        overflow: scroll;
+    }
+}

@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div className="section footer">
+        <footer className="section footer xlpt nbp">
             <div className="title">
                 <h2><span>Don't be shy, </span>Say Hi.</h2>
             </div>
@@ -37,7 +37,7 @@ const Footer = () => {
                     <a className="alt" href="#5">Privacy policy</a>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 

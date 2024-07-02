@@ -1,4 +1,45 @@
 .section {
     width: calc(100vw - 300px);
     margin: 0 auto;
+
+
+    // Width
+    &.fw {
+        width: 100vw;
+    }
+
+    // Padding
+    // Padding top
+    &.npt {
+        padding-top: 0;
+    }
+    &.spt {
+        padding-top: 25px;
+    }
+    &.mpt {
+        padding-top: 50px;
+    }
+    &.lpt {
+        padding-top: 75px;
+    }
+    &.xlpt {
+        padding-top: 100px;
+    }
+
+    // Padding bottom
+    &.npb {
+        padding-bottom: 0;
+    }
+    &.spb {
+        padding-bottom: 25px;
+    }
+    &.mpb {
+        padding-bottom: 50px;
+    }
+    &.lpb {
+        padding-bottom: 75px;
+    }
+    &.xlpb {
+        padding-bottom: 100px;
+    }
 }
