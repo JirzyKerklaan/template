@@ -1,6 +1,37 @@
-.Projects {
+.projects {
     .title {
 
     }
 
+    .cards {
+        gap: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .card {
+            position: relative;
+            background: #d5d5d5;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 10px;
+            height: 450px;
+            border-radius: 10px;
+            flex-grow: 1;
+            flex-basis: 0;
+            transition: all 300ms ease-in-out;
+            display: flex;
+            align-items: flex-end;
+
+            &:hover {
+                flex-grow: 2;
+            }
+
+            .text {
+                max-width: 270px;
+
+            }
+        }
+    }
 }

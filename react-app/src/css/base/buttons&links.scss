@@ -1,11 +1,23 @@
-a, button {
-
+a {
     &.primary {
 
     }
 
-    &.secondary {
-
+    &.button {
+        width: 100%;
+        padding: 10px 5px;
+        color: #0a0a0a;
+        text-decoration: none;
+        transition: all ease-in-out .2s;
+        font-weight: 700;
+        font-family: Khula;
+        font-size: 18px;
+        line-height: 100%;
+        background-color: #D5D5D5;
+        
+        &:hover {
+            transition: all ease-in-out .2s;
+        }
     }
 
     &.alt {

@@ -29,6 +29,14 @@ h3 {
     font-size: 22px;
     line-height: 135%;
 
+    &.thinner {
+        margin: 0;
+        font-weight: 600;
+        font-family: Khula;
+        font-size: 22px;
+        line-height: 135%;
+    }
+    
     &.alt {
         margin: 0;
         font-weight: 700;
