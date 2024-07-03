@@ -1,8 +1,4 @@
 a {
-    &.primary {
-
-    }
-
     &.button {
         width: 100%;
         padding: 10px 5px;
@@ -48,6 +44,22 @@ a {
 
         &:hover {
             color: #0a0a0a45;
+            transition: all ease-in-out .2s;
+        }
+    }
+    
+    &.alt-3 {
+        margin: 0;
+        font-weight: 800;
+        font-family: Inter;
+        font-size: 13px;
+        line-height: 135%;
+        color: #1944c7;
+        text-decoration: none;
+        transition: all ease-in-out .2s;
+
+        &:hover {
+            text-decoration: underline;
             transition: all ease-in-out .2s;
         }
     }

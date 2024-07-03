@@ -89,6 +89,16 @@
         flex-direction: row;
         justify-content: space-between;
 
+        .copyright {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+            p {
+                font-size: 13px !important;
+            }
+        }
+
         .links {
             display: flex;
             flex-direction: row;

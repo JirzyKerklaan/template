@@ -32,7 +32,11 @@ const Footer = () => {
             </div>
 
             <div className="terms-services">
-                <p>&copy;Agency X B.V.</p>
+                <div class="copyright">
+                    <p>&copy;Agency X B.V.</p>
+                    <p>|</p>
+                    <p>Made by <a className="alt-3" href="#5">Jirzy Kerklaan</a></p>
+                </div>
                 <div class="links">
                     <a className="alt-2" href="#5">Terms of Services</a>
                     <a className="alt-2" href="#5">Privacy policy</a>
