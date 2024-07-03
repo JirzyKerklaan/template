@@ -2,7 +2,7 @@ import Card from './Card';
 
 const Projects = () => {
     return (
-        <div className="section projects mpt mpb">
+        <div className="section projects lpt xlpb">
             <div className="title">
                 <h2>Our projects</h2>
             </div>

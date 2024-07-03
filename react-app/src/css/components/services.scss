@@ -12,6 +12,7 @@
         grid-template-columns: repeat(3, calc(33% - (75px / 2)));
         width: 100%;
         height: 375px;
+        row-gap: 30px;
 
         .service {
             width: 65%;

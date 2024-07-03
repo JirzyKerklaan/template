@@ -35,4 +35,20 @@ a {
             transition: all ease-in-out .2s;
         }
     }
+    
+    &.alt-2 {
+        color: #0a0a0a;
+        margin: 0;
+        font-weight: 600;
+        font-family: Khula;
+        font-size: 15px;
+        line-height: 100%;
+        text-decoration: none;
+        transition: all ease-in-out .2s;
+
+        &:hover {
+            color: #0a0a0a45;
+            transition: all ease-in-out .2s;
+        }
+    }
 }
