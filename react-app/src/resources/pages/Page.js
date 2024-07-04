@@ -16,6 +16,7 @@ const Page = () => {
       });
   }, []);
   
+  console.log(content)
   return (
     <main>
       {content && content?.content.map((item, index) => 

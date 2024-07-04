@@ -1,9 +1,8 @@
-const Footer = () => {
+const Footer = (props) => {
     return (
         <footer className="section footer xlpt nbp">
-            <div className="title">
-                <h2><span>Don't be shy, </span>Say Hi.</h2>
-            </div>
+            <div className="title" dangerouslySetInnerHTML={{ __html: props?.block?.Title }}></div>
+                    {/* <span>Don't be shy, </span>Say Hi.</h2> props.block.Title*/}
 
             <div className="columns">
                 <div className="column location">

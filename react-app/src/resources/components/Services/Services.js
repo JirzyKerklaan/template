@@ -1,10 +1,10 @@
 import Service from './Service';
 
-const Services = () => {
+const Services = (props) => {
     return (
         <div className="section services lpb">
             <div className="title">
-                <h2>What we do.</h2>
+                <h2>{props.block.Title}</h2>
             </div>
             <div className="services-grid">
                 {[1,2,3,4,5, 6].map(item => 

@@ -16,9 +16,16 @@ export interface FooterFooter extends Schema.Component {
   info: {
     displayName: 'Footer';
     icon: 'cube';
+    description: '';
   };
   attributes: {
-    Title: Attribute.Text;
+    Title: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'toolbar';
+        }
+      >;
   };
 }
 

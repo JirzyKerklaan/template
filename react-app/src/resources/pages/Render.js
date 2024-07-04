@@ -9,15 +9,15 @@ const Render = (props) => {
     if (props.block?.__component === 'pageheader.pageheader') {
         return <Pageheader block={props.block} />
     } else if (props.block.__component === 'projects.projects') {
-        return <Projects />
+        return <Projects block={props.block} />
     } else if (props.block.__component === 'services.services') {
-        return <Services />
+        return <Services block={props.block} />
     } else if (props.block.__component === 'clients.clients') {
-        return <Clients />
+        return <Clients block={props.block} />
     } else if (props.block.__component === 'reviews.reviews') {
-        return <Reviews />
+        return <Reviews block={props.block} />
     } else if (props.block.__component === 'footer.footer') {
-        return <Footer />
+        return <Footer block={props.block} />
     }
 }
 

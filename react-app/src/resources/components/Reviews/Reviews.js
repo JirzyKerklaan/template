@@ -2,12 +2,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Review from './Review';
 import 'swiper/css';
 
-const Clients = () => {
+const Clients = (props) => {
 
     return (
         <div className="section reviews lpt xlpb">
             <div className="title">
-                <h2>What Our Clients Say.</h2>
+                <h2>{props.block.Title}</h2>
             </div>
 
             <div className="outer">

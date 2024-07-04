@@ -2,12 +2,17 @@
   "collectionName": "components_footer_footers",
   "info": {
     "displayName": "Footer",
-    "icon": "cube"
+    "icon": "cube",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "Title": {
-      "type": "text"
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

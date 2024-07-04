@@ -1,11 +1,11 @@
 import Client from './Client';
 
-const Clients = () => {
+const Clients = (props) => {
 
     return (
         <div className="section clients xlpt xlpb">
             <div className="title">
-                <h2>Our Clients.</h2>
+                <h2>{props.block.Title}</h2>
             </div>
 
             <div className="outer">

@@ -1,6 +1,4 @@
 const Pageheader = (props) => {
-    console.log(props.block);
-
     return (
         <div className="section pageheader npt mpb">
             <div className="content">
