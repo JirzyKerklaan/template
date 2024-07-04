@@ -8,7 +8,7 @@ const Projects = () => {
             </div>
             <div className="cards">
                 {[1,2,3,4].map(item => 
-                    <Card />
+                    <Card key={item} />
                 )}
             </div>
         </div>

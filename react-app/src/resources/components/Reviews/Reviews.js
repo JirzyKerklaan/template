@@ -15,7 +15,7 @@ const Clients = () => {
                     spaceBetween={50}
                     slidesPerView={2.5}>
                     {[1,2,3,4,5].map(item => 
-                        <SwiperSlide>
+                        <SwiperSlide key={item}>
                             <Review />
                         </SwiperSlide>
                     )} 

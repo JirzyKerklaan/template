@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_clients_clients",
+  "info": {
+    "displayName": "Clients",
+    "icon": "cube"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    }
+  }
+}

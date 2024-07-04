@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_pageheader_socials",
+  "info": {
+    "displayName": "Social",
+    "icon": "twitter",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Platform": {
+      "type": "enumeration",
+      "enum": [
+        "facebook",
+        "instagram",
+        "linkedin",
+        "twitter"
+      ]
+    },
+    "Link": {
+      "type": "string"
+    }
+  }
+}

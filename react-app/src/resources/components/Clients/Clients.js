@@ -1,4 +1,3 @@
-import Marquee from "react-fast-marquee";
 import Client from './Client';
 
 const Clients = () => {
@@ -10,8 +9,8 @@ const Clients = () => {
             </div>
 
             <div className="outer">
-                {[1,2,3,4,5,1,2,3,4,5].map(item => 
-                    <Client />
+                {[1,2,3,4,5,6,7,8,9,10].map(item => 
+                    <Client key={item} />
                 )} 
             </div>
         </div>

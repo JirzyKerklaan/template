@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_projects_projects",
+  "info": {
+    "displayName": "Projects",
+    "icon": "cube"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Project": {
+      "displayName": "Card",
+      "type": "component",
+      "repeatable": true,
+      "component": "projects.card"
+    }
+  }
+}

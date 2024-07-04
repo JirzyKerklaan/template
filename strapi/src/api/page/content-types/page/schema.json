@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Pagina's",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "pageheader.pageheader",
+        "projects.projects",
+        "services.services",
+        "clients.clients",
+        "reviews.reviews",
+        "footer.footer"
+      ]
+    },
+    "Title": {
+      "type": "string"
+    }
+  }
+}
