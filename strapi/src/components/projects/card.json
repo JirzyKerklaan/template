@@ -2,8 +2,13 @@
   "collectionName": "components_projects_cards",
   "info": {
     "displayName": "Card",
-    "icon": "apps"
+    "icon": "apps",
+    "description": ""
   },
   "options": {},
-  "attributes": {}
+  "attributes": {
+    "test": {
+      "type": "string"
+    }
+  }
 }

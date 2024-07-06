@@ -10,7 +10,7 @@ let config = {
 
 export const getCollectionEntry = async (collection, entry = '') => {
   try {
-      const res = await axios.get(`${BASE_URL}/${collection}/${entry}?populate=*`, config);
+      const res = await axios.get(`${BASE_URL}/${collection}/${entry}?populate=deep`, config);
       return res.data;
   } catch (error) {
       console.error('Error fetching collection entry:', error);

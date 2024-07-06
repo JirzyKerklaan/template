@@ -62,8 +62,11 @@ export interface ProjectsCard extends Schema.Component {
   info: {
     displayName: 'Card';
     icon: 'apps';
+    description: '';
   };
-  attributes: {};
+  attributes: {
+    test: Attribute.String;
+  };
 }
 
 export interface ProjectsProjects extends Schema.Component {
@@ -71,6 +74,7 @@ export interface ProjectsProjects extends Schema.Component {
   info: {
     displayName: 'Projects';
     icon: 'cube';
+    description: '';
   };
   attributes: {
     Title: Attribute.String;
