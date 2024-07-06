@@ -1,7 +1,7 @@
-const Service = (props) => {
+const Service = ({service}) => {
     return (
         <div className="service" dangerouslySetInnerHTML={
-            {__html: props.service.content}
+            {__html: service.content}
         }></div>
     )
 }

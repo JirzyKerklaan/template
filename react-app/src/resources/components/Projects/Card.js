@@ -1,8 +1,8 @@
-const Card = (props) => {
+const Card = ({project}) => {
     return (
         <div className="card">
             <div className="text" dangerouslySetInnerHTML={
-                {__html: props.project.text}
+                {__html: project.text}
             }>
             </div>
         </div>

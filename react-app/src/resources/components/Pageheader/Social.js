@@ -1,4 +1,4 @@
-const Social = (props) => {
+const Social = ({social}) => {
     function getClassList(social) {
         if(social === 'linkedin') {
             return `fa-brands fa-${social}-in`;
@@ -10,8 +10,8 @@ const Social = (props) => {
     }
     
     return (
-        <a href={'https://' + props.social.Link}>
-            <i className={getClassList(props.social.Platform)}></i>
+        <a href={'https://' + social.Link}>
+            <i className={getClassList(social.Platform)}></i>
         </a>
     )
 }

@@ -1,17 +1,16 @@
 import Client from './Client';
 
-const Clients = (props) => {
-
+const Clients = ({block}) => {
     return (
         <div className="section clients xlpt xlpb">
             <div className="title">
-                <h2>{props.block.Title}</h2>
+                <h2>{block.Title}</h2>
             </div>
 
             <div className="outer">
-                {[1,2,3,4,5,6,7,8,9,10].map(item => 
-                    <Client key={item} />
-                )} 
+                {block.Clients.data.map(client => (
+                    <Client key={client.id} client={client} />
+                ))}
             </div>
         </div>
     )

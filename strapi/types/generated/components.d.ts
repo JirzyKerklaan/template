@@ -5,10 +5,21 @@ export interface ClientsClients extends Schema.Component {
   info: {
     displayName: 'Clients';
     icon: 'cube';
+    description: '';
   };
   attributes: {
     Title: Attribute.String;
+    Clients: Attribute.Media<'images', true>;
   };
+}
+
+export interface ClientsSingleClient extends Schema.Component {
+  collectionName: 'components_clients_single_clients';
+  info: {
+    displayName: 'Single-client';
+    icon: 'cube';
+  };
+  attributes: {};
 }
 
 export interface FooterFooter extends Schema.Component {
@@ -149,6 +160,7 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'clients.clients': ClientsClients;
+      'clients.single-client': ClientsSingleClient;
       'footer.footer': FooterFooter;
       'pageheader.pageheader': PageheaderPageheader;
       'pageheader.social': PageheaderSocial;

@@ -1,13 +1,13 @@
 import Card from './Card';
 
-const Projects = (props) => {
+const Projects = ({block}) => {
     return (
         <div className="section projects lpt xlpb">
             <div className="title">
-                <h2>{props.block.Title}</h2>
+                <h2>{block.Title}</h2>
             </div>
             <div className="cards">
-                {props.block.Project.map(project => (
+                {block.Project.map(project => (
                     <Card key={project.id} project={project} />
                 ))}
             </div>

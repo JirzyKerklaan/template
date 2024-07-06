@@ -15,8 +15,7 @@ const Page = () => {
         console.error('Error fetching data:', error);
       });
   }, []);
-  
-  console.log(content)
+
   return (
     <main>
       {content && content?.content.map((item, index) => 

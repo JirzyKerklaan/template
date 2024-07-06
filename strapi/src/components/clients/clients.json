@@ -2,12 +2,20 @@
   "collectionName": "components_clients_clients",
   "info": {
     "displayName": "Clients",
-    "icon": "cube"
+    "icon": "cube",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "Title": {
       "type": "string"
+    },
+    "Clients": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
