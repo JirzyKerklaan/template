@@ -13,12 +13,12 @@ const Clients = (props) => {
             <div className="outer">
                 <Swiper
                     spaceBetween={50}
-                    slidesPerView={2.5}>
-                    {[1,2,3,4,5].map(item => 
-                        <SwiperSlide key={item}>
-                            <Review />
+                    slidesPerView={2.5}>                    
+                    {props.block.Review.map(review => (
+                        <SwiperSlide key={review.id}>
+                            <Review review={review} />
                         </SwiperSlide>
-                    )} 
+                    ))}
                 </Swiper>
             </div>
         </div>

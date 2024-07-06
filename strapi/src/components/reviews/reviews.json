@@ -2,12 +2,19 @@
   "collectionName": "components_reviews_reviews",
   "info": {
     "displayName": "Reviews",
-    "icon": "cube"
+    "icon": "cube",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "Title": {
       "type": "string"
+    },
+    "Review": {
+      "displayName": "Single-review",
+      "type": "component",
+      "repeatable": true,
+      "component": "reviews.single-review"
     }
   }
 }

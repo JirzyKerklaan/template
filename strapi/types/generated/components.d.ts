@@ -65,7 +65,13 @@ export interface ProjectsCard extends Schema.Component {
     description: '';
   };
   attributes: {
-    test: Attribute.String;
+    text: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'toolbar';
+        }
+      >;
   };
 }
 
@@ -87,9 +93,25 @@ export interface ReviewsReviews extends Schema.Component {
   info: {
     displayName: 'Reviews';
     icon: 'cube';
+    description: '';
   };
   attributes: {
     Title: Attribute.String;
+    Review: Attribute.Component<'reviews.single-review', true>;
+  };
+}
+
+export interface ReviewsSingleReview extends Schema.Component {
+  collectionName: 'components_reviews_single_reviews';
+  info: {
+    displayName: 'Single-review';
+    icon: 'cube';
+  };
+  attributes: {
+    image: Attribute.Media<'images'>;
+    name: Attribute.String;
+    function: Attribute.String;
+    content: Attribute.Text;
   };
 }
 
@@ -98,9 +120,28 @@ export interface ServicesServices extends Schema.Component {
   info: {
     displayName: 'Services';
     icon: 'cube';
+    description: '';
   };
   attributes: {
     Title: Attribute.String;
+    Service: Attribute.Component<'services.single-service', true>;
+  };
+}
+
+export interface ServicesSingleService extends Schema.Component {
+  collectionName: 'components_services_single_services';
+  info: {
+    displayName: 'single-service';
+    icon: 'cube';
+  };
+  attributes: {
+    content: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'toolbar';
+        }
+      >;
   };
 }
 
@@ -114,7 +155,9 @@ declare module '@strapi/types' {
       'projects.card': ProjectsCard;
       'projects.projects': ProjectsProjects;
       'reviews.reviews': ReviewsReviews;
+      'reviews.single-review': ReviewsSingleReview;
       'services.services': ServicesServices;
+      'services.single-service': ServicesSingleService;
     }
   }
 }

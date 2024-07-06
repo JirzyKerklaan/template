@@ -7,9 +7,9 @@ const Services = (props) => {
                 <h2>{props.block.Title}</h2>
             </div>
             <div className="services-grid">
-                {[1,2,3,4,5, 6].map(item => 
-                    <Service key={item} />
-                )} 
+                {props.block.Service.map(service => (
+                    <Service key={service.id} service={service} />
+                ))}
             </div>
         </div>
     )

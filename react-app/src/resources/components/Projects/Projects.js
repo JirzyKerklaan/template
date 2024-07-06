@@ -7,9 +7,9 @@ const Projects = (props) => {
                 <h2>{props.block.Title}</h2>
             </div>
             <div className="cards">
-                {[1,2,3,4].map(item => 
-                    <Card key={item} />
-                )}
+                {props.block.Project.map(project => (
+                    <Card key={project.id} project={project} />
+                ))}
             </div>
         </div>
     )

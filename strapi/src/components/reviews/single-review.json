@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_reviews_single_reviews",
+  "info": {
+    "displayName": "Single-review",
+    "icon": "cube"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "name": {
+      "type": "string"
+    },
+    "function": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    }
+  }
+}

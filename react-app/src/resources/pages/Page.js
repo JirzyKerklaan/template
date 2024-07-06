@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {getCollectionEntry} from '../../helpers/strapiHelper';
-import Render from './Render'; // Adjust the import according to your project structure
+import Render from './Render';
 
 const Page = () => {
   const [content, setContent] = useState(null);

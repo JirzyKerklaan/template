@@ -2,12 +2,19 @@
   "collectionName": "components_services_services",
   "info": {
     "displayName": "Services",
-    "icon": "cube"
+    "icon": "cube",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "Title": {
       "type": "string"
+    },
+    "Service": {
+      "displayName": "single-service",
+      "type": "component",
+      "repeatable": true,
+      "component": "services.single-service"
     }
   }
 }

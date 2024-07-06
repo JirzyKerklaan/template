@@ -1,13 +1,12 @@
 {
-  "collectionName": "components_projects_cards",
+  "collectionName": "components_services_single_services",
   "info": {
-    "displayName": "Card",
-    "icon": "apps",
-    "description": ""
+    "displayName": "single-service",
+    "icon": "cube"
   },
   "options": {},
   "attributes": {
-    "text": {
+    "content": {
       "type": "customField",
       "options": {
         "preset": "toolbar"
