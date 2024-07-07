@@ -1,6 +1,8 @@
-
 # Template
-A React x Strapi project
+
+Template is an application which is created to show off my skills. I used Strapi in combination with React, I chose to use Strapi for easy manageability and React for a fast user experience.
+
+During the production of the application, I encountered multiple challenges. One significant issue was with the population settings of the GET requests made to Strapi. I resolved this by installing an NPM addon that ensures all requests are always fully populated.
 
 ### For development of the project
 
