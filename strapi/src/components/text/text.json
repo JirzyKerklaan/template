@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_text_texts",
+  "info": {
+    "displayName": "Text",
+    "icon": "italic"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

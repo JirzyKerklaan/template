@@ -1,6 +1,6 @@
 import Social from './Social';
 
-const Pageheader = ({block}) => { 
+const Pageheader = ({block, contactInfo}) => { 
     return (
         <div className="section pageheader npt mpb">
             <div className="content">
@@ -8,7 +8,7 @@ const Pageheader = ({block}) => {
                     <h1>{block.text}</h1>
                 </div>
                 <div className="socials">
-                    {block.Social.map(social => (
+                    {contactInfo?.Social.map(social => (
                         <Social key={social.id} social={social} />
                     ))}
                     {/* <i className="fa-brands fa-instagram"></i>

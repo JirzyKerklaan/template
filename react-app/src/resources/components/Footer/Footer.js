@@ -1,14 +1,14 @@
-const Footer = ({block}) => {
+const Footer = ({block, contactInfo}) => {
     return (
         <footer className="section footer xlpt nbp">
             <div className="title" dangerouslySetInnerHTML={{ __html: block?.Title }}></div>
 
             <div className="columns">
                 <div className="column location">
-                    <h3 className="alt">Netherlands</h3>
+                    <h3 className="alt">{contactInfo?.country}</h3>
 
                     <div className="address">
-                        <p>Agency X, Straatnaam 123, 1234 AB, Amsterdam</p>
+                        <p>{contactInfo?.companyName}, {contactInfo?.streetname}, {contactInfo?.postalCode}, {contactInfo?.city}</p>
                     </div>
                 </div>
 
@@ -22,16 +22,15 @@ const Footer = ({block}) => {
                 </div>
 
                 <div className="column socials">
-                    <a className="alt" href="#1">Instagram</a>
-                    <a className="alt" href="#2">Facebook</a>
-                    <a className="alt" href="#3">Twitter</a>
-                    <a className="alt" href="#4">LinkedIn</a>
+                    {contactInfo?.Social.map(social => (
+                        <a key={social.id} className="alt" href={social?.Link}>{social?.Platform}</a>
+                    ))}
                 </div>
             </div>
 
             <div className="terms-services">
                 <div className="copyright">
-                    <p>&copy;Agency X B.V.</p>
+                    <p>&copy;{contactInfo?.companyName}</p>
                     <p>|</p>
                     <p>Made by <a className="alt-3" href="#5">Jirzy Kerklaan</a></p>
                 </div>

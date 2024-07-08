@@ -362,6 +362,48 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
+export interface ApiContactInfoContactInfo extends Schema.SingleType {
+  collectionName: 'contact_infos';
+  info: {
+    singularName: 'contact-info';
+    pluralName: 'contact-infos';
+    displayName: 'Contact info';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    country: Attribute.String;
+    companyName: Attribute.String;
+    streetname: Attribute.String;
+    postalCode: Attribute.String;
+    city: Attribute.String;
+    Social: Attribute.Component<'contact-info.social', true> &
+      Attribute.SetMinMax<
+        {
+          max: 4;
+        },
+        number
+      >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::contact-info.contact-info',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::contact-info.contact-info',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiPagePage extends Schema.CollectionType {
   collectionName: 'pages';
   info: {
@@ -381,7 +423,8 @@ export interface ApiPagePage extends Schema.CollectionType {
         'services.services',
         'clients.clients',
         'reviews.reviews',
-        'footer.footer'
+        'footer.footer',
+        'text.text'
       ]
     >;
     Title: Attribute.String;
@@ -831,6 +874,7 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
+      'api::contact-info.contact-info': ApiContactInfoContactInfo;
       'api::page.page': ApiPagePage;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;

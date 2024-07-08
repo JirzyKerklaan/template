@@ -10,7 +10,7 @@ const Social = ({social}) => {
     }
     
     return (
-        <a href={'https://' + social.Link}>
+        <a href={social.Link}>
             <i className={getClassList(social.Platform)}></i>
         </a>
     )

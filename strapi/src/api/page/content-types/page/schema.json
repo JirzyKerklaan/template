@@ -20,7 +20,8 @@
         "services.services",
         "clients.clients",
         "reviews.reviews",
-        "footer.footer"
+        "footer.footer",
+        "text.text"
       ]
     },
     "Title": {

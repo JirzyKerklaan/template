@@ -22,6 +22,21 @@ export interface ClientsSingleClient extends Schema.Component {
   attributes: {};
 }
 
+export interface ContactInfoSocial extends Schema.Component {
+  collectionName: 'components_pageheader_socials';
+  info: {
+    displayName: 'Social';
+    icon: 'cube';
+    description: '';
+  };
+  attributes: {
+    Platform: Attribute.Enumeration<
+      ['facebook', 'instagram', 'linkedin', 'twitter']
+    >;
+    Link: Attribute.String;
+  };
+}
+
 export interface FooterFooter extends Schema.Component {
   collectionName: 'components_footer_footers';
   info: {
@@ -49,22 +64,6 @@ export interface PageheaderPageheader extends Schema.Component {
   };
   attributes: {
     text: Attribute.Text;
-    Social: Attribute.Component<'pageheader.social', true>;
-  };
-}
-
-export interface PageheaderSocial extends Schema.Component {
-  collectionName: 'components_pageheader_socials';
-  info: {
-    displayName: 'Social';
-    icon: 'twitter';
-    description: '';
-  };
-  attributes: {
-    Platform: Attribute.Enumeration<
-      ['facebook', 'instagram', 'linkedin', 'twitter']
-    >;
-    Link: Attribute.String;
   };
 }
 
@@ -156,20 +155,38 @@ export interface ServicesSingleService extends Schema.Component {
   };
 }
 
+export interface TextText extends Schema.Component {
+  collectionName: 'components_text_texts';
+  info: {
+    displayName: 'Text';
+    icon: 'italic';
+  };
+  attributes: {
+    text: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'toolbar';
+        }
+      >;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'clients.clients': ClientsClients;
       'clients.single-client': ClientsSingleClient;
+      'contact-info.social': ContactInfoSocial;
       'footer.footer': FooterFooter;
       'pageheader.pageheader': PageheaderPageheader;
-      'pageheader.social': PageheaderSocial;
       'projects.card': ProjectsCard;
       'projects.projects': ProjectsProjects;
       'reviews.reviews': ReviewsReviews;
       'reviews.single-review': ReviewsSingleReview;
       'services.services': ServicesServices;
       'services.single-service': ServicesSingleService;
+      'text.text': TextText;
     }
   }
 }

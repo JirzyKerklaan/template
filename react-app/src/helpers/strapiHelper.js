@@ -13,7 +13,16 @@ export const getCollectionEntry = async (collection, entry = '') => {
       const res = await axios.get(`${BASE_URL}/${collection}/${entry}?populate=deep`, config);
       return res.data;
   } catch (error) {
-      console.error('Error fetching collection entry:', error);
-      throw error;
+    return false;
+  }
+}
+
+
+export const getSingleType = async (collection) => {
+  try {
+    const res = await axios.get(`${BASE_URL}/${collection}?populate=deep`, config);
+    return res.data;
+  } catch (error) {
+    return false;
   }
 }

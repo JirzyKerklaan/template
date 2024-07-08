@@ -9,12 +9,6 @@
   "attributes": {
     "text": {
       "type": "text"
-    },
-    "Social": {
-      "displayName": "Social",
-      "type": "component",
-      "repeatable": true,
-      "component": "pageheader.social"
     }
   }
 }
