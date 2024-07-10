@@ -5,6 +5,8 @@ const Card = ({project}) => {
                 {__html: project.text}
             }>
             </div>
+            <div class="overlay"></div>
+            <img src={'http://localhost:1337' + project.image.data.attributes.url} alt="client"/>
         </div>
     )
 }

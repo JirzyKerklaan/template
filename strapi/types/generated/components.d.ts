@@ -82,6 +82,7 @@ export interface ProjectsCard extends Schema.Component {
           preset: 'toolbar';
         }
       >;
+    image: Attribute.Media<'images'> & Attribute.Required;
   };
 }
 
