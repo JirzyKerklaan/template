@@ -23,3 +23,5 @@ First run,
 Then run,
 
     npm run strapi dev
+
+When running the application you should keep in mind that it is not in it's final stage yet.
